@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage[table]{xcolor}
+
+\title{tables}
+
+\begin{document}
+	\maketitle
+
+	\begin{table}[h]
+	
+		\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|p{5cm}}
+			\hline
+			\textbf{id} & \textbf{name} & \textbf{branch} & \textbf{class} \\
+			\hline
+			1 & abhi & cse & c4 \\
+			\hline
+			2  & sunny & mech & c1 \\
+			\hline
+			3 & sai & cse & c4 \\
+			\hline
+			 
+			
+		\end{tabular}
+	\caption{student }
+	\end{table}
+	\begin{table}[h]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		\cellcolor{yellow}  \textbf{id} & \cellcolor{pink} \textbf{name}  \\
+		\hline
+		\cellcolor{red}    1 &  \cellcolor{blue}   abhi \\
+		\hline
+		2  & sunny \\
+		\hline
+		3 & sai \\
+		\hline
+		
+		
+	\end{tabular}
+	\caption{student }
+\end{table}
+
+\begin{table}[h]
+	\begin{tabular}{|c|c|c|c|c|c|c|c|}
+		\hline
+		\textbf{year} & \textbf{time} & \textbf{mon} & \textbf{tus} &  \textbf{wed} & \textbf{thus} & \textbf{fri} & \textbf{sat} \\
+		
+		\hline
+		
+		C4 class&slot1 & & & \cellcolor{red}B &  & &  \\
+		
+		\cline{2-8}
+		&slot2& \cellcolor{orange} C & \cellcolor{yellow} E & \cellcolor{red} B & \cellcolor{purple} A & \cellcolor{orange} C & \\
+		\cline{2-8}
+		&slot3& \cellcolor{purple} A & \cellcolor{yellow} E & \cellcolor{purple} A & \cellcolor{purple} A &\cellcolor{orange} C & \\
+		\cline{2-8}
+		&slot4& & \cellcolor{green}X & \cellcolor{green} X &  &  &   \\
+		\cline{2-8}
+	
+		\multicolumn{8}{|c|}{Lunch Break}\\	
+		
+	
+		\cline{2-8}
+		&slot5&  \cellcolor{green} X & \cellcolor{blue} & \cellcolor{red} & \cellcolor{yellow}  & \cellcolor{gray} &   \\
+		\cline{2-3}
+		&slot6& \cellcolor{yellow} E& \cellcolor{blue}  Y&\cellcolor{red}  B &  \cellcolor{yellow} F & \cellcolor{gray} D &   \\
+		\cline{2-3}
+		&slot7& &\cellcolor{blue}  &\cellcolor{red}  & \cellcolor{yellow}  & \cellcolor{gray}  &   \\
+		\cline{2-8}
+		&slot8& & &  &  &  &   \\
+	
+		\hline
+		
+	
+	\end{tabular}
+\end{table}
+
+
+
+
+\end{document}
